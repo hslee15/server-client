@@ -1,12 +1,10 @@
 const express = require("express")
 const app = express()
 const PORT = 3000
-
-const userRouter = require("./routes/user")
+const bookRoutes=require('./routes/books')
 
 app.use(express.json())
-app.use("/users", userRouter)
-
+app.use("/books", bookRoutes)
 
 
 
